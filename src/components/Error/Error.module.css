@@ -1,3 +1,17 @@
-.error {
+.errorBox {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  width: 500px;
+}
+
+.iconMain {
   margin: 0 auto;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }

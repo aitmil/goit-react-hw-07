@@ -5,6 +5,7 @@ import ContactForm from "../ContactForm/ContactForm";
 import ContactList from "../ContactList/ContactList";
 import SearchBox from "../SearchBox/SearchBox";
 import Loader from "../Loader/Loader";
+import Error from "../Error/Error";
 import { fetchContacts } from "../../redux/operations";
 
 export default function App() {

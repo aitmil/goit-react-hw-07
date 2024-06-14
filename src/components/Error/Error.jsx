@@ -5,10 +5,10 @@ import css from "./Error.module.css";
 export default function Loader() {
   return (
     <div className={css.errorBox}>
-      <GiTerror />
+      <GiTerror size={48} className={css.iconMain} />
       <div className={css.error}>
         <p className={css.text}>
-          Ooops...Something went wrong! Try to reload this page
+          Ooops... Something went wrong! Try to reload this page
         </p>
         <IoReload />
       </div>
