@@ -2,11 +2,11 @@ import { useSelector } from "react-redux";
 import css from "./ContactList.module.css";
 import Contact from "../Contact/Contact";
 import { selectContacts } from "../../redux/contactsSlice";
-import { selectFilter } from "../../redux/filtersSlice";
+import { selectNameFilter } from "../../redux/filtersSlice";
 
 export default function ContactList() {
   const contacts = useSelector(selectContacts);
-  const filters = useSelector(selectFilter);
+  const filters = useSelector(selectNameFilter);
   const visibleContacts = contacts.filter((contact) => {
     if ("id" in contact && "name" in contact && "number" in contact) {
       if (
