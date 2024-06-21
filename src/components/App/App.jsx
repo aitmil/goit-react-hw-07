@@ -7,12 +7,12 @@ import SearchBox from "../SearchBox/SearchBox";
 import Loader from "../Loader/Loader";
 import Error from "../Error/Error";
 import { fetchContacts } from "../../redux/operations";
-import { error, loading } from "../../redux/selectors";
+import { selectError, selectLoading } from "../../redux/contactsSlice";
 
 export default function App() {
   const dispatch = useDispatch();
-  const isLoading = useSelector(loading);
-  const isError = useSelector(error);
+  const isLoading = useSelector(selectLoading);
+  const isError = useSelector(selectError);
 
   useEffect(() => {
     dispatch(fetchContacts());
