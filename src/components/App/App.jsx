@@ -6,7 +6,7 @@ import ContactList from "../ContactList/ContactList";
 import SearchBox from "../SearchBox/SearchBox";
 import Loader from "../Loader/Loader";
 import Error from "../Error/Error";
-import { fetchContacts } from "../../redux/operations";
+import { fetchContacts } from "../../redux/contactsOps";
 import { selectError, selectLoading } from "../../redux/contactsSlice";
 
 export default function App() {
